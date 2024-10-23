@@ -1,7 +1,7 @@
 @vite("resources/js/app.js")
 @vite("resources/scss/app.scss")
 
-<footer class="bg-dark text-white pt-5">
+<footer class="bg-dark text-white pt-5 footer">
     <div class="container">
         <div class="row">
             <div class="col-md-3">

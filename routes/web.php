@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home', ['comics' => config('comics')]);
 });
+
+Route::get('/comic/{id}', function ($id) {
+    $comics = config('comics');
+    if (isset($comics[$id])) {
+        return view('pages.comic', ['comic' => $comics[$id]]);
+    } else {
+        abort(404);
+    }
+});
