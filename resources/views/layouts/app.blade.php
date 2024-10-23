@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DC Comics</title>
-    @vite('resources/js/app.js')
+    @vite(['resources/js/app.js', 'resources/scss/app.scss'])
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-    @include('partials.header')
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
 
-    <main>
-        @yield('content')
-    </main>
+    <div id="app" style="display: none;">
+        @include('partials.header')
 
-    @include('partials.footer')
+        <main>
+            @yield('content')
+        </main>
+
+        @include('partials.footer')
+    </div>
 </body>
 </html>

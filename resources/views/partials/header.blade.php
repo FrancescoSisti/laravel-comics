@@ -51,10 +51,15 @@
                         <a class="nav-link" href="#">SHOP</a>
                     </li>
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex me-3">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
                 </form>
+                <div class="theme-selector">
+                    <button id="themeToggle" class="btn btn-outline-primary">
+                        <i class="bi bi-sun-fill"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
